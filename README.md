@@ -35,8 +35,8 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 - **CRTA** — Certified Red Team Analyst, Cyberwarfare Labs
 - **WEB-RTA** — Certified Web Red Team Analyst, Cyberwarfare Labs
-- **RED-0** — Fundamentals of Penetration Testing, HAAD TC (Mar 2026)
-- **RED-1** — HAAD TC
+- **RED-0** — Fundamentals of Penetration Testing, Haad Security Training Center (Mar 2026)
+- **RED-1** — Penetration Testing Course · HPTC (Haad Penetration Tester Certificate), Haad Security Training Center
 
 <br>
 
@@ -94,8 +94,8 @@ Built and deployed a computer-delivered IELTS exam practice platform with authen
 **Webster University Tashkent** — Fall 2026
 B.S. Computer Science, Cybersecurity focus — In Progress, entering Junior year
 
-**HAAD TC** — 10-month Penetration Testing training program
-Completed RED-0 (Fundamentals of Penetration Testing) and RED-1
+**Haad Security Training Center** — 10-month Penetration Testing training program
+Completed RED-0 (Fundamentals of Penetration Testing) and RED-1 (Penetration Testing Course, HPTC-certified)
 
 <br>
 

@@ -13,8 +13,8 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 - Certified Red Team Analyst (CRTA) — Cyberwarfare Labs
 - Certified Web Red Team Analyst (WEB-RTA) — Cyberwarfare Labs
-- RED-0: Fundamentals of Penetration Testing — HTC, Mar 2026
-- RED-1 — In Progress
+- RED-0: Fundamentals of Penetration Testing — HAAD TC, Mar 2026
+- RED-1 — HAAD TC
 
 ## Vulnerability Research
 
@@ -46,6 +46,9 @@ Four published CVEs, responsibly disclosed via TuranSec:
 
 **Webster University Tashkent** — Fall 2026
 B.S. Computer Science, Cybersecurity focus — In Progress, entering Junior year
+
+**HAAD TC** — 10-month Penetration Testing training program
+Completed RED-0 (Fundamentals of Penetration Testing) and RED-1
 
 ## Experience
 

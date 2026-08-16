@@ -10,6 +10,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nel-droid)
 [![Telegram](https://img.shields.io/badge/Telegram-@ne__th__y__ch-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/ne_th_y_ch)
 [![Hack The Box](https://img.shields.io/badge/Hack_The_Box-E1dorb3k-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ne_th_y_ch)
 
 </div>
 
@@ -41,7 +42,7 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 ## 🛡️ Vulnerability Research
 
-**4 published CVEs** · Coordinated disclosure via CNA **Turan Security**
+**5 published CVEs** · Coordinated disclosure via CNA **Turan Security** · [full record](https://www.cve.org/CVERecord/SearchResults?query=Eldor+Nabijonov)
 
 | CVE | Product | Summary | Severity |
 |---|---|---|:---:|
@@ -49,6 +50,7 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 | [`CVE-2026-71203`](https://github.com/Nel-droid/CVE-2026-71203-PoC) | changedetection.io | Unauthenticated endpoint exposed the full API schema even with access control enabled | ![5.3](https://img.shields.io/badge/5.3-Medium-yellow?style=flat-square) |
 | [`CVE-2026-71204`](https://github.com/Nel-droid/CVE-2026-71204-PoC) | changedetection.io | A "settings" field silently disabled API authentication entirely when left unchecked | ![6.3](https://img.shields.io/badge/6.3-Medium-yellow?style=flat-square) |
 | [`CVE-2026-71205`](https://github.com/Nel-droid/CVE-2026-71205-PoC) | changedetection.io | No rate limiting on login, allowing unlimited password-guessing attempts | ![6.5](https://img.shields.io/badge/6.5-Medium-yellow?style=flat-square) |
+| [`CVE-2026-72585`](https://github.com/Nel-droid/CVE-2026-72585-PoC) | **Grafana** | Incomplete fix for CVE-2026-21724 — an Editor-role user could delete protected alert contact points without the required permission | ![6.5](https://img.shields.io/badge/6.5-Medium-yellow?style=flat-square) |
 
 <br>
 
@@ -61,8 +63,8 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 ## 💻 Projects
 
-**[CDI Practice](https://cdi-practice.vercel.app)**
-Built and deployed a computer-delivered IELTS exam practice platform with authentic Cambridge Reading, Listening, and Writing sections under timed conditions.
+**[CDI Practice](https://cdi-practice.uz)** ([cdi-practice.vercel.app](https://cdi-practice.vercel.app))
+Built and deployed a computer-delivered IELTS exam practice platform with authentic Cambridge Reading, Listening, and Writing sections under timed conditions. Live on a custom domain (cdi-practice.uz) in addition to its Vercel deployment.
 
 <br>
 

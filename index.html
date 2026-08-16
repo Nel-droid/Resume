@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eldor Nabijonov — Penetration Tester</title>
+<meta name="description" content="Eldor Nabijonov — Penetration Tester & Vulnerability Researcher. 5 published CVEs, CRTA & WEB-RTA certified." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%9B%A1%EF%B8%8F</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="scan-line"></div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-brand">EN<span class="cursor-blink">_</span></a>
+  <button id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="#about" class="nav-link">about</a></li>
+    <li><a href="#certs" class="nav-link">certs</a></li>
+    <li><a href="#research" class="nav-link">research</a></li>
+    <li><a href="#experience" class="nav-link">experience</a></li>
+    <li><a href="#skills" class="nav-link">skills</a></li>
+    <li><a href="#contact" class="nav-link cta">contact</a></li>
+  </ul>
+</nav>
+
+<header id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal"><span class="prompt">$</span> whoami</p>
+    <h1 class="hero-name reveal">Eldor Nabijonov</h1>
+    <h2 class="hero-role"><span id="typed-role"></span><span class="type-cursor">|</span></h2>
+    <p class="hero-loc reveal">📍 Tashkent, Uzbekistan</p>
+    <p class="hero-summary reveal">
+      Cybersecurity student specializing in offensive security and vulnerability research —
+      <strong>5 published CVEs</strong> and active coordinated disclosures.
+      CRTA &amp; WEB-RTA certified, hands-on in web application testing, network penetration testing, and OSINT.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#research" class="btn btn-primary">View Research</a>
+      <a href="README.md" class="btn btn-ghost">Read Full Résumé</a>
+    </div>
+    <div class="hero-socials reveal">
+      <a href="https://www.linkedin.com/in/eldor-nabijonov-6714852b7/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a href="https://github.com/Nel-droid" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.6.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .32.21.68.8.56A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a>
+      <a href="https://t.me/ne_th_y_ch" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg viewBox="0 0 24 24"><path d="M22 3.5 2.6 11.2c-1.3.5-1.3 1.2-.2 1.6l4.9 1.5 1.9 5.9c.2.7.4.9.9.9.5 0 .7-.2 1-.5l2.4-2.3 5 3.6c.9.5 1.6.3 1.8-.8l3.3-15.6c.4-1.4-.5-2-1.6-1.5zM8.9 14.2l9.2-8c.4-.3.8-.2.5.2l-7.9 8.5-.3 3.2-1.5-3.9z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/ne_th_y_ch" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2 .25 2.4.42.6.24 1 .53 1.5.98.45.45.75.9.98 1.5.17.4.36 1.2.42 2.4.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 2-.42 2.4a4 4 0 0 1-.98 1.5c-.45.45-.9.75-1.5.98-.4.17-1.2.36-2.4.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-2-.25-2.4-.42a4 4 0 0 1-1.5-.98 4 4 0 0 1-.98-1.5c-.17-.4-.36-1.2-.42-2.4C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-2 .42-2.4.24-.6.53-1 .98-1.5.45-.45.9-.75 1.5-.98.4-.17 1.2-.36 2.4-.42C8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52 0-4.76.07-.97.04-1.5.2-1.85.34-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.35-.3.88-.34 1.85C3.08 8.44 3.06 8.8 3.06 12s0 3.52.07 4.76c.04.97.2 1.5.34 1.85.18.47.4.8.75 1.15.35.35.68.57 1.15.75.35.14.88.3 1.85.34C7.5 21.94 7.85 21.94 12 21.94s3.52 0 4.76-.07c.97-.04 1.5-.2 1.85-.34.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.35.3-.88.34-1.85.07-1.24.07-1.6.07-4.76s0-3.52-.07-4.76c-.04-.97-.2-1.5-.34-1.85-.18-.47-.4-.8-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C15.52 4.06 15.15 4 12 4zm0 4.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 1.8a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2zm6.9-2a1.26 1.26 0 1 1-2.52 0 1.26 1.26 0 0 1 2.52 0z"/></svg>
+      </a>
+      <a href="mailto:eldornabijonov.2005@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2L19.8 6H4.2zM20 8.1l-7.4 5.9a1 1 0 0 1-1.2 0L4 8.1V18h16V8.1z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</header>
+
+<main>
+
+  <section id="about" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">01.</span> About</h2>
+    <p class="about-text">
+      I build web applications — <a href="https://cdi-practice.uz" target="_blank" rel="noopener">cdi-practice.uz</a> is mine, front to back — and I break other people's for a living.
+      Published security researcher: I hunt vulnerabilities in self-hosted platforms, chain what I find into working exploits,
+      and hand vendors the fix before I hand anyone the story. Pursuing a B.S. in Computer Science at Webster University Tashkent,
+      entering Junior year Fall 2026.
+    </p>
+  </section>
+
+  <section id="certs" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">02.</span> Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-badge">CRTA</div>
+        <h3>Certified Red Team Analyst</h3>
+        <p>Cyberwarfare Labs</p>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge">WEB-RTA</div>
+        <h3>Certified Web Red Team Analyst</h3>
+        <p>Cyberwarfare Labs</p>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge">RED-0</div>
+        <h3>Fundamentals of Penetration Testing</h3>
+        <p>Haad Security Training Center · Mar 2026</p>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge">RED-1</div>
+        <h3>Penetration Testing Course · HPTC</h3>
+        <p>Haad Security Training Center</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">03.</span> Vulnerability Research</h2>
+    <p class="section-lede">5 published CVEs · coordinated disclosure via CNA <strong>Turan Security</strong> · <a href="https://www.cve.org/CVERecord/SearchResults?query=Eldor+Nabijonov" target="_blank" rel="noopener">full record ↗</a></p>
+
+    <div class="cve-grid">
+
+      <a class="cve-card sev-high reveal" href="https://github.com/Nel-droid/CVE-2026-71206-PoC" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-71206</span>
+          <span class="cve-sev">8.2 High</span>
+        </div>
+        <h3>Shiori</h3>
+        <p>JWT session check verified signature only and never re-fetched account state — deleted or demoted users kept full access up to 30 days via "remember me" tokens.</p>
+        <span class="cve-link">read write-up →</span>
+      </a>
+
+      <a class="cve-card sev-med reveal" href="https://github.com/Nel-droid/CVE-2026-72585-PoC" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-72585</span>
+          <span class="cve-sev">6.5 Medium</span>
+        </div>
+        <h3>Grafana</h3>
+        <p>Incomplete fix for CVE-2026-21724 — an Editor-role user could delete protected alert contact points without the required permission.</p>
+        <span class="cve-link">read write-up →</span>
+      </a>
+
+      <a class="cve-card sev-med reveal" href="https://github.com/Nel-droid/CVE-2026-71205-PoC" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-71205</span>
+          <span class="cve-sev">6.5 Medium</span>
+        </div>
+        <h3>changedetection.io</h3>
+        <p>No rate limiting on the login route — unlimited password-guessing attempts, no lockout, no per-IP throttling.</p>
+        <span class="cve-link">read write-up →</span>
+      </a>
+
+      <a class="cve-card sev-med reveal" href="https://github.com/Nel-droid/CVE-2026-71204-PoC" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-71204</span>
+          <span class="cve-sev">6.3 Medium</span>
+        </div>
+        <h3>changedetection.io</h3>
+        <p>An omitted checkbox in the settings save handler silently disabled API key enforcement entirely.</p>
+        <span class="cve-link">read write-up →</span>
+      </a>
+
+      <a class="cve-card sev-low reveal" href="https://github.com/Nel-droid/CVE-2026-71203-PoC" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-71203</span>
+          <span class="cve-sev">5.3 Medium</span>
+        </div>
+        <h3>changedetection.io</h3>
+        <p>The /api/v1/full-spec endpoint disclosed the full OpenAPI schema with zero authentication.</p>
+        <span class="cve-link">read write-up →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">04.</span> Experience &amp; Education</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Fall 2026 →</span>
+          <h3>B.S. Computer Science, Cybersecurity Focus</h3>
+          <p class="timeline-org">Webster University Tashkent — in progress, entering Junior year</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">10 months</span>
+          <h3>Penetration Testing Training Program</h3>
+          <p class="timeline-org">Haad Security Training Center — RED-0 &amp; RED-1 completed</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Ongoing</span>
+          <h3>Hack The Box — Professional Rank</h3>
+          <p class="timeline-org">Handle <code>E1dorb3k</code> · 10 machines completed · Pro Lab: Puppet</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2 yrs, concluded 2026</span>
+          <h3>English Teacher</h3>
+          <p class="timeline-org">HardWork Learning Center — exam-preparation classes, mentoring, presentation skills</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">05.</span> Skills</h2>
+
+    <div class="skills-block reveal">
+      <h4>Penetration Testing</h4>
+      <div class="pill-row">
+        <span class="pill">Web Application Testing</span>
+        <span class="pill">Network Penetration Testing</span>
+        <span class="pill">Vulnerability Assessment</span>
+        <span class="pill">OSINT</span>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <h4>Security Concepts</h4>
+      <div class="pill-row">
+        <span class="pill">Access Control Testing</span>
+        <span class="pill">Authentication &amp; Session Security</span>
+        <span class="pill">API Security</span>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <h4>Tools</h4>
+      <div class="pill-row">
+        <span class="pill pill-accent">Burp Suite</span>
+        <span class="pill pill-accent">Nmap</span>
+        <span class="pill pill-accent">Metasploit</span>
+        <span class="pill pill-accent">Kali Linux</span>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <h4>Languages</h4>
+      <div class="pill-row">
+        <span class="pill">Uzbek — Native</span>
+        <span class="pill">Tajik — Native</span>
+        <span class="pill">English — Advanced</span>
+        <span class="pill">Russian — Pre-Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">06.</span> Project</h2>
+    <div class="project-card reveal">
+      <h3>CDI Practice</h3>
+      <p>A computer-delivered IELTS exam practice platform with authentic Cambridge Reading, Listening, and Writing sections under timed conditions.</p>
+      <div class="project-links">
+        <a href="https://cdi-practice.uz" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">cdi-practice.uz ↗</a>
+        <a href="https://cdi-practice.vercel.app" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">vercel deployment ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal-section">
+    <h2 class="section-title"><span class="section-num">07.</span> Contact</h2>
+    <p class="contact-lede">Open to opportunities in offensive security and web development. Reach out.</p>
+    <div class="contact-grid reveal">
+      <a href="mailto:eldornabijonov.2005@gmail.com" class="contact-item">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">eldornabijonov.2005@gmail.com</span>
+      </a>
+      <a href="tel:+998939466406" class="contact-item">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+998 93 946 64 06</span>
+      </a>
+      <a href="https://www.linkedin.com/in/eldor-nabijonov-6714852b7/" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">eldor-nabijonov</span>
+      </a>
+      <a href="https://github.com/Nel-droid" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">Nel-droid</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Designed &amp; built by Eldor Nabijonov · <span id="footer-time">Tashkent</span></p>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

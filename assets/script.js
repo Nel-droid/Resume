@@ -120,7 +120,7 @@
       const a = particlesArr[i];
       ctx.beginPath();
       ctx.arc(a.x, a.y, 1.4, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(255,43,43,0.55)";
+      ctx.fillStyle = "rgba(124,92,255,0.55)";
       ctx.fill();
 
       for (let j = i + 1; j < particlesArr.length; j++) {
@@ -168,7 +168,7 @@
         const id = entry.target.id;
         if (entry.isIntersecting && map[id]) {
           links.forEach((l) => l.style.color = "");
-          map[id].style.color = "var(--red)";
+          map[id].style.color = "var(--accent)";
         }
       });
     },

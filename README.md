@@ -18,7 +18,7 @@
 
 ## 🧭 Summary
 
-Cybersecurity student specializing in offensive security and vulnerability research, with **four published CVEs** and active coordinated disclosures. Pursuing a B.S. in Computer Science at Webster University Tashkent, entering Junior year Fall 2026. Certified Red Team Analyst (CRTA) and Certified Web Red Team Analyst (WEB-RTA), with hands-on experience in web application testing, network penetration testing, and OSINT methodology.
+Cybersecurity student specializing in offensive security and vulnerability research, with published CVEs and active coordinated disclosures. Studying at Webster University Tashkent since 2023, entering Junior year Fall 2026. Certified Red Team Analyst (CRTA) and Certified Web Red Team Analyst (WEB-RTA), with hands-on experience in web application testing, network penetration testing, and OSINT methodology.
 
 <br>
 
@@ -42,7 +42,7 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 ## 🛡️ Vulnerability Research
 
-**5 published CVEs** · Coordinated disclosure via CNA **Turan Security** · [full record](https://www.cve.org/CVERecord/SearchResults?query=Eldor+Nabijonov)
+Published CVEs · Coordinated disclosure via CNA **Turan Security** · [full record](https://www.cve.org/CVERecord/SearchResults?query=Eldor+Nabijonov)
 
 | CVE | Product | Summary | Severity |
 |---|---|---|:---:|
@@ -63,7 +63,7 @@ Cybersecurity student specializing in offensive security and vulnerability resea
 
 ## 💻 Projects
 
-**[CDI Practice](https://cdi-practice.uz)** ([cdi-practice.vercel.app](https://cdi-practice.vercel.app))
+**[CDI Practice](https://cdi-practice.uz)**
 Built and deployed a computer-delivered IELTS exam practice platform with authentic Cambridge Reading, Listening, and Writing sections under timed conditions. Live on a custom domain (cdi-practice.uz) in addition to its Vercel deployment.
 
 <br>
@@ -91,8 +91,8 @@ Built and deployed a computer-delivered IELTS exam practice platform with authen
 
 ## 🎓 Education
 
-**Webster University Tashkent** — Fall 2026
-B.S. Computer Science, Cybersecurity focus — In Progress, entering Junior year
+**Webster University Tashkent** — 2023 → Present
+In progress, entering Junior year Fall 2026
 
 **Haad Security Training Center** — 10-month Penetration Testing training program
 Completed RED-0 (Fundamentals of Penetration Testing) and RED-1 (Penetration Testing Course, HPTC-certified)

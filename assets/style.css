@@ -364,7 +364,7 @@ main { position: relative; z-index: 2; }
 .cve-stack::-webkit-scrollbar-track { background: transparent; }
 
 .cve-card {
-  flex: 0 0 260px;
+  flex: 0 0 280px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(160deg, var(--bg-elev-2) 0%, var(--bg-elev) 100%);
@@ -373,29 +373,26 @@ main { position: relative; z-index: 2; }
   border-top: 3px solid var(--text-faint);
   border-radius: 16px;
   padding: 1.4rem;
-  min-height: 260px;
+  height: 280px;
   margin-left: -56px;
   position: relative;
-  transform: rotate(var(--tilt, 0deg)) translateY(var(--lift, 6px));
+  transform: scale(1);
   transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease, opacity 0.35s ease, filter 0.35s ease, z-index 0s;
   scroll-snap-align: center;
   box-shadow: 0 10px 24px -14px rgba(0,0,0,0.6);
   cursor: pointer;
 }
 .cve-card:first-child { margin-left: 0; }
-.cve-card:nth-child(2n)   { --tilt: 2.5deg;  --lift: 16px; }
-.cve-card:nth-child(2n+1) { --tilt: -2.5deg; --lift: 0px; }
-.cve-card:nth-child(3n)   { --tilt: 1.2deg;  --lift: 24px; }
 
 .cve-stack:hover > .cve-card {
-  opacity: 0.5;
+  opacity: 0.45;
   filter: blur(1.5px) saturate(70%);
 }
 .cve-stack > .cve-card:hover,
 .cve-stack > .cve-card:focus-visible {
   opacity: 1 !important;
   filter: none !important;
-  transform: rotate(0deg) translateY(-18px) scale(1.08);
+  transform: scale(1.08);
   z-index: 20;
   box-shadow: 0 30px 60px -16px rgba(0,0,0,0.7);
   border-color: var(--accent);
@@ -418,11 +415,15 @@ main { position: relative; z-index: 2; }
   font-size: 0.85rem;
   margin-bottom: 1.1rem;
   flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 .cve-link { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); margin-top: auto; }
 
 @media (max-width: 780px) {
-  .cve-card { flex: 0 0 220px; margin-left: -40px; min-height: 230px; }
+  .cve-card { flex: 0 0 230px; margin-left: -40px; height: 260px; }
   .cve-stack:hover > .cve-card { opacity: 1; filter: none; }
 }
 

@@ -310,37 +310,7 @@ main { position: relative; z-index: 2; }
 .about-text { font-size: 1.1rem; color: var(--text-dim); max-width: 720px; }
 .about-text a { color: var(--accent); border-bottom: 1px solid var(--accent-dim); }
 
-/* ---------- Certs ---------- */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-}
-@media (max-width: 900px) {
-  .cert-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 520px) {
-  .cert-grid { grid-template-columns: 1fr; }
-}
-.cert-card {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.6rem;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-.cert-card:hover { transform: translateY(-4px); border-color: var(--accent); }
-.cert-badge {
-  font-family: var(--mono);
-  color: var(--accent);
-  font-weight: 800;
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
-}
-.cert-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
-.cert-card p { color: var(--text-faint); font-size: 0.88rem; }
-
-/* ---------- CVE Cards: overlapping stack/deck ---------- */
+/* ---------- Shared stack/deck component (certs, CVEs, skills) ---------- */
 .scroll-hint {
   font-family: var(--mono);
   font-size: 0.75rem;
@@ -348,7 +318,7 @@ main { position: relative; z-index: 2; }
   margin-bottom: 1.4rem;
 }
 
-.cve-stack {
+.stack {
   display: flex;
   align-items: flex-start;
   overflow-x: auto;
@@ -359,11 +329,11 @@ main { position: relative; z-index: 2; }
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
-.cve-stack::-webkit-scrollbar { height: 6px; }
-.cve-stack::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-.cve-stack::-webkit-scrollbar-track { background: transparent; }
+.stack::-webkit-scrollbar { height: 6px; }
+.stack::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.stack::-webkit-scrollbar-track { background: transparent; }
 
-.cve-card {
+.stack-card {
   flex: 0 0 280px;
   display: flex;
   flex-direction: column;
@@ -382,14 +352,14 @@ main { position: relative; z-index: 2; }
   box-shadow: 0 10px 24px -14px rgba(0,0,0,0.6);
   cursor: pointer;
 }
-.cve-card:first-child { margin-left: 0; }
+.stack-card:first-child { margin-left: 0; }
 
-.cve-stack:hover > .cve-card {
+.stack:hover > .stack-card {
   opacity: 0.45;
   filter: blur(1.5px) saturate(70%);
 }
-.cve-stack > .cve-card:hover,
-.cve-stack > .cve-card:focus-visible {
+.stack > .stack-card:hover,
+.stack > .stack-card:focus-visible {
   opacity: 1 !important;
   filter: none !important;
   transform: scale(1.08);
@@ -398,6 +368,24 @@ main { position: relative; z-index: 2; }
   border-color: var(--accent);
 }
 
+.stack-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+
+@media (max-width: 780px) {
+  .stack-card { flex: 0 0 230px; margin-left: -40px; height: 260px; }
+  .stack:hover > .stack-card { opacity: 1; filter: none; }
+}
+
+/* ---------- Certs ---------- */
+.cert-badge {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+.cert-card p { color: var(--text-faint); font-size: 0.88rem; }
+
+/* ---------- CVE Cards ---------- */
 .cve-card.sev-high { border-top-color: var(--sev-high); }
 .cve-card.sev-med  { border-top-color: var(--orange); }
 .cve-card.sev-low  { border-top-color: var(--yellow); }
@@ -409,7 +397,6 @@ main { position: relative; z-index: 2; }
 .sev-med .cve-sev  { background: #ffb02033; color: var(--orange); }
 .sev-low .cve-sev  { background: #ffd16633; color: var(--yellow); }
 
-.cve-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
 .cve-card p {
   color: var(--text-dim);
   font-size: 0.85rem;
@@ -422,10 +409,9 @@ main { position: relative; z-index: 2; }
 }
 .cve-link { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); margin-top: auto; }
 
-@media (max-width: 780px) {
-  .cve-card { flex: 0 0 230px; margin-left: -40px; height: 260px; }
-  .cve-stack:hover > .cve-card { opacity: 1; filter: none; }
-}
+/* ---------- Skills ---------- */
+.skill-card { border-top-color: var(--accent-2); justify-content: flex-start; }
+.skill-card h3 { color: var(--text); }
 
 /* ---------- Timeline ---------- */
 .timeline { position: relative; padding-left: 2rem; }
@@ -452,19 +438,18 @@ main { position: relative; z-index: 2; }
 .timeline-org code { font-family: var(--mono); color: var(--orange); }
 
 /* ---------- Skills ---------- */
-.skills-block { margin-bottom: 1.8rem; }
-.skills-block h4 { font-family: var(--mono); color: var(--text-dim); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.8rem; }
-.pill-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-content: flex-start; }
 .pill {
   font-family: var(--mono);
-  font-size: 0.82rem;
-  padding: 7px 14px;
+  font-size: 0.75rem;
+  padding: 6px 12px;
   border-radius: 20px;
   border: 1px solid var(--border);
   color: var(--text-dim);
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
-.pill:hover { border-color: var(--accent); color: var(--text); transform: translateY(-2px); }
+.pill:hover { border-color: var(--accent); color: var(--text); }
 .pill-accent { border-color: var(--accent-dim); color: var(--accent); }
 
 /* ---------- Project ---------- */

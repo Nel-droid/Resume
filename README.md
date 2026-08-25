@@ -56,7 +56,7 @@ Published CVEs · Coordinated disclosure via CNA **Turan Security** · [full rec
 
 ## ⚔️ Practical Experience
 
-- **Hack The Box** — Professional rank, 10 machines completed, handle `E1dorb3k`
+- **Hack The Box** — Master rank, 10 machines completed, handle `E1dorb3k`
 - **HTB Pro Lab: Puppet** — completed mini Pro Lab simulating a realistic enterprise attack chain
 - **HTB Pro Lab: Mythical** — completed mini Pro Lab simulating a realistic enterprise attack chain
 

@@ -50,7 +50,7 @@ Published CVEs · Coordinated disclosure via CNA **Turan Security** · [full rec
 | [`CVE-2026-71203`](https://github.com/Nel-droid/CVE-2026-71203-PoC) | changedetection.io | Unauthenticated endpoint exposed the full API schema even with access control enabled | ![5.3](https://img.shields.io/badge/5.3-Medium-yellow?style=flat-square) |
 | [`CVE-2026-71204`](https://github.com/Nel-droid/CVE-2026-71204-PoC) | changedetection.io | A "settings" field silently disabled API authentication entirely when left unchecked | ![6.3](https://img.shields.io/badge/6.3-Medium-yellow?style=flat-square) |
 | [`CVE-2026-71205`](https://github.com/Nel-droid/CVE-2026-71205-PoC) | changedetection.io | No rate limiting on login, allowing unlimited password-guessing attempts | ![6.5](https://img.shields.io/badge/6.5-Medium-yellow?style=flat-square) |
-| [`CVE-2026-72585`](https://github.com/Nel-droid/CVE-2026-72585-PoC) | **Grafana** | Incomplete fix for CVE-2026-21724 — an Editor-role user could delete protected alert contact points without the required permission | ![6.5](https://img.shields.io/badge/6.5-Medium-yellow?style=flat-square) |
+| [`CVE-2026-73529`](https://www.cve.org/CVERecord?id=CVE-2026-73529) | Plainpad | Missing rate limiting on `POST /v1/sessions` allowed unbounded login brute-force | ![5.3](https://img.shields.io/badge/5.3-Medium-yellow?style=flat-square) |
 
 <br>
 
@@ -58,6 +58,7 @@ Published CVEs · Coordinated disclosure via CNA **Turan Security** · [full rec
 
 - **Hack The Box** — Professional rank, 10 machines completed, handle `E1dorb3k`
 - **HTB Pro Lab: Puppet** — completed mini Pro Lab simulating a realistic enterprise attack chain
+- **HTB Pro Lab: Mythical** — completed mini Pro Lab simulating a realistic enterprise attack chain
 
 <br>
 

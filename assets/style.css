@@ -386,6 +386,7 @@ main { position: relative; z-index: 2; }
 .cert-card p { color: var(--text-faint); font-size: 0.88rem; }
 
 /* ---------- CVE Cards ---------- */
+.cve-card.sev-critical { border-top-color: #ff1744; }
 .cve-card.sev-high { border-top-color: var(--sev-high); }
 .cve-card.sev-med  { border-top-color: var(--orange); }
 .cve-card.sev-low  { border-top-color: var(--yellow); }
@@ -393,6 +394,7 @@ main { position: relative; z-index: 2; }
 .cve-head { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; margin-bottom: 0.9rem; }
 .cve-id { font-family: var(--mono); font-size: 0.72rem; color: var(--text-faint); }
 .cve-sev { font-family: var(--mono); font-size: 0.7rem; font-weight: 700; padding: 3px 9px; border-radius: 20px; white-space: nowrap; }
+.sev-critical .cve-sev { background: #ff174433; color: #ff1744; }
 .sev-high .cve-sev { background: var(--sev-high-dim); color: var(--sev-high); }
 .sev-med .cve-sev  { background: #ffb02033; color: var(--orange); }
 .sev-low .cve-sev  { background: #ffd16633; color: var(--yellow); }

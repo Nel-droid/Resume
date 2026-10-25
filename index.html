@@ -114,14 +114,54 @@
 
     <div class="stack reveal">
 
+      <a class="stack-card cve-card sev-critical" href="https://www.cve.org/CVERecord?id=CVE-2026-105835" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-105835</span>
+          <span class="cve-sev">9.1 Critical</span>
+        </div>
+        <h3>Planka</h3>
+        <p>The TOTP verification endpoint lacked rate limiting — an attacker with a user's password could brute-force the 6-digit code within the 10-minute pending token window and bypass MFA entirely.</p>
+        <span class="cve-link">read CVE record →</span>
+      </a>
+
       <a class="stack-card cve-card sev-high" href="https://github.com/Nel-droid/CVE-2026-71206-PoC" target="_blank" rel="noopener">
         <div class="cve-head">
           <span class="cve-id">CVE-2026-71206</span>
-          <span class="cve-sev">8.2 High</span>
+          <span class="cve-sev">8.3 High</span>
         </div>
         <h3>Shiori</h3>
         <p>JWT session check verified signature only and never re-fetched account state — deleted or demoted users kept full access up to 30 days via "remember me" tokens.</p>
         <span class="cve-link">read write-up →</span>
+      </a>
+
+      <a class="stack-card cve-card sev-high" href="https://www.cve.org/CVERecord?id=CVE-2026-106056" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-106056</span>
+          <span class="cve-sev">7.7 High</span>
+        </div>
+        <h3>Rundeck</h3>
+        <p>OS command injection on Windows nodes — CLIUtils.quoteWindowsCMDArg() failed to sanitize free-text job options, allowing cmd.exe metacharacter injection with node executor credentials.</p>
+        <span class="cve-link">read CVE record →</span>
+      </a>
+
+      <a class="stack-card cve-card sev-high" href="https://www.cve.org/CVERecord?id=CVE-2026-105834" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-105834</span>
+          <span class="cve-sev">7.1 High</span>
+        </div>
+        <h3>Rundeck</h3>
+        <p>Path traversal via resources.source.N.config.file — users with project configure ACL permissions could read arbitrary server files, exposing database passwords and LDAP credentials.</p>
+        <span class="cve-link">read CVE record →</span>
+      </a>
+
+      <a class="stack-card cve-card sev-med" href="https://www.cve.org/CVERecord?id=CVE-2026-73529" target="_blank" rel="noopener">
+        <div class="cve-head">
+          <span class="cve-id">CVE-2026-73529</span>
+          <span class="cve-sev">6.9 Medium</span>
+        </div>
+        <h3>Plainpad</h3>
+        <p>Missing rate limiting on POST /v1/sessions allowed unbounded login brute-force attempts.</p>
+        <span class="cve-link">read CVE record →</span>
       </a>
 
       <a class="stack-card cve-card sev-med" href="https://github.com/Nel-droid/CVE-2026-72585-PoC" target="_blank" rel="noopener">
@@ -132,16 +172,6 @@
         <h3>Grafana</h3>
         <p>Incomplete fix for CVE-2026-21724 — Editor role could delete protected contact points without the required protected-write permission, silencing critical alert notifications.</p>
         <span class="cve-link">read write-up →</span>
-      </a>
-
-      <a class="stack-card cve-card sev-low" href="https://www.cve.org/CVERecord?id=CVE-2026-73529" target="_blank" rel="noopener">
-        <div class="cve-head">
-          <span class="cve-id">CVE-2026-73529</span>
-          <span class="cve-sev">5.3 Medium</span>
-        </div>
-        <h3>Plainpad</h3>
-        <p>Missing rate limiting on POST /v1/sessions allowed unbounded login brute-force attempts.</p>
-        <span class="cve-link">read CVE record →</span>
       </a>
 
       <a class="stack-card cve-card sev-med" href="https://github.com/Nel-droid/CVE-2026-71205-PoC" target="_blank" rel="noopener">
@@ -157,7 +187,7 @@
       <a class="stack-card cve-card sev-med" href="https://github.com/Nel-droid/CVE-2026-71204-PoC" target="_blank" rel="noopener">
         <div class="cve-head">
           <span class="cve-id">CVE-2026-71204</span>
-          <span class="cve-sev">6.3 Medium</span>
+          <span class="cve-sev">6.2 Medium</span>
         </div>
         <h3>changedetection.io</h3>
         <p>An omitted checkbox in the settings save handler silently disabled API key enforcement entirely.</p>
